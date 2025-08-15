@@ -5,19 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <title>Subham sahoo</title>
+    
     <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+    <script src="index.js" defer></script>
 </head>
 <body><header class="space-x-9 items-center p-3">
-    <div class="bg-white text-black p-3  space-x-9 flex justify-center  items-center cursor-pointer font-serif font-semibold text-l ">
+    <div class="bg-white text-black p-3  justify-center  items-center cursor-pointer  ">
 
 <!-- <nav>Home</nav> -->
- <nav><img src="favicon-32x32.png" alt="Logo" class="h-5 w-5 absolute left-56 top-7"></nav>
-<nav class="hover:text-blue-500">Projects</nav>
-<nav class="hover:text-blue-500">About</nav>
-<nav class="hover:text-blue-500">Resume</nav>
-<nav class="hover:text-blue-500">Contact</nav>
-<nav class="hover:text-blue-500">Blog</nav>
+ <nav><img src="favicon-32x32.png" alt="Logo" class=" hidden md:flex h-5 w-5 absolute left-56 top-7">
+<nav class="space-x-9 hidden md:flex justify-center  items-center cursor-pointer font-serif font-semibold text-lg">
+    <a href="#" class="hover:text-blue-500">Project</a>
+    <a href="#" class="hover:text-blue-500">About</a>
+    <a href="#" class="hover:text-blue-500">Resume</a>
+    <a href="#" class="hover:text-blue-500">Contact</a>
+    <a href="#" class="hover:text-blue-500">Blog</a>
+    </nav>
+    </nav>
+ 
+<!-- hamburger menu -->
+ <nav class="md:hidden order-2">
+
+<div id="menu-div" class="md:hidden order-2 flex justify-between items-center p-3 ">
+    <img src="favicon-32x32.png" alt="Logo" class="h-5 w-5 md:hidden flex items-center ">
+    <button id="menu-btn" aria-label="Open menu" class="md:hidden">
+        <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+
+    
+<!-- // mobile menu -->
+ 
+<div id="mobile-menu" class="hidden flex flex-col space-y-4 p-4 bg-gray-800 shadow-lg md:hidden text-white" >
+    <a href="#" class="hover:text-blue-500">Project1</a>
+    <a href="#" class="hover:text-blue-500">About1</a>
+    <a href="#" class="hover:text-blue-500">Resume1</a>
+    <a href="#" class="hover:text-blue-500">Contac1t</a>
+    <a href="#" class="hover:text-blue-500">Blog1</a>
+</div>
+</div>
+</nav>
 </header>
+
+ 
 </div>
 </body>
+<!-- <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+    });
+</script> -->
 </html>
